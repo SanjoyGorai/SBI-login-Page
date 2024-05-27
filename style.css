@@ -3,16 +3,18 @@
     padding: 0;
 }
 
-header{
+header {
     width: 900px;
     margin: auto;
 }
+
 header a,
 ul {
     display: inline-block;
     vertical-align: middle;
 }
-header ul{
+
+header ul {
     float: right;
 }
 
@@ -32,21 +34,62 @@ a:hover {
     text-decoration: underline;
 }
 
-nav{
+nav {
     background-color: blue;
     margin: auto;
     width: 900px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     padding: 10px;
 
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     padding: 10px;
+    color: white;
+
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     text-decoration: none;
     background-color: aqua;
+}
+.main-div{
+    margin: auto;
+    width: 900px;
+}
+form {
+    display: block;
+}
+#captcha-div{
+    width: 100px;
+    height: 30px;
+    background-color: wheat;
+    display: inline-block;
+}
+#refresh-img{
+    width: 25px;
+    display: inline;
+    color: blue;
+}
+#refresh-img:hover{
+    cursor: pointer;
+}
+
+#login-btn{
+    background-color: #14B1E2;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    color: white;
+}
+#reset-btn{
+    background-color: #14B1E2;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    color: white;
 }
