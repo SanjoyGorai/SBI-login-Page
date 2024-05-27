@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 900px;
+    margin: auto;
+}
+header a,
+ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+header ul{
+    float: right;
+}
+
+
+header ul li img {}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav{
+    background-color: blue;
+    margin: auto;
+    width: 900px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    background-color: aqua;
+}
