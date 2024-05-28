@@ -7,7 +7,11 @@
     <title>State Bank of India</title>
     <link rel="icons" href="icons/SBI-logo.svg.png">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body onload="generateCaptcha()">
@@ -39,22 +43,24 @@
 
     <div class="main-div">
         <div class="form-div">
+            <span id="care-txt"><span style="color: orangered;">(CARE: </span> Username and password are case
+                sensitive.)</span> <br>
             <form action="">
                 <label for="">Username*</label> <br>
-                <input type="text">   <br>
-                <label for="">Password*</label>   <br>
-                <input type="password">  <br>
+                <input type="text" id="username-field" onpaste="return false"> <br>
+                <label for="">Password*</label> <br>
+                <input type="password" id="password-field"> <br>
                 <label for="">Enter the text as shown in the image *</label> <br>
-                <input type="text">
-                <div>
-                    <label for="">Image Captcha</label> 
-                    <input type="radio">
-                    <label for="">Audio Captcha</label>
-                    <input type="radio">
+                <input type="text" id="captcha-field"> <br>
+                <label for="">Select one of the Captcha options *</label>
+                <div class="radio-captcha-div">
+                    <input type="radio" id="image-radio" name="captcha" checked>
+                    <label for="image-radio" class="captcha-label">Image Captcha</label>
+                    <input type="radio" name="captcha" id="audio-radio">
+                    <label for="audio-radio" class="captcha-label">Audio Captcha</label>
                 </div>
-                <div id="captcha-div">
-                        
-                </div> 
+                <div hidden id="captcha-div"> </div>  
+                <audio src="" controls id="captcha-audio" hidden>Sa</audio>
                 <img src="icons/refresh.svg" alt="" id="refresh-img"> <br>
                 <button id="login-btn">Login</button>
                 <button id="reset-btn">Reset</button>

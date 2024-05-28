@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -57,17 +58,49 @@ nav ul li a:hover {
     text-decoration: none;
     background-color: aqua;
 }
-.main-div{
+
+.main-div {
     margin: auto;
     width: 900px;
 }
-form {
-    display: block;
+
+form {}
+
+label {
+    font-size: 12px;
 }
-#captcha-div{
+
+#care-txt {
+    font-size: 10px;
+}
+
+form input {
+    padding: 5px;
+    /* width: 252px; */
+    outline: none;
+    border: 1px solid grey;
+    background: none;
+}
+
+#username-field,
+#password-field,
+#captcha-field {
+    width: 252px;
+}
+
+form>input,
+label,
+div,
+image,
+button {
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+#captcha-div {
     width: 100px;
     height: 30px;
-    background-color: wheat;
+    background-color: red;
     display: inline-block;
     font-weight: 400;
     font-size: x-large;
@@ -75,26 +108,43 @@ form {
     text-decoration: line-through;
     user-select: none;
 }
-#refresh-img{
+
+.captcha-label {
+    color: orangered;
+    font-size: 12px;
+}
+
+.radio-captcha-div input,
+label {}
+
+#refresh-img {
     width: 25px;
     display: inline;
     color: blue;
 }
-#refresh-img:hover{
+
+#refresh-img:hover {
     cursor: pointer;
 }
 
-#login-btn{
+#login-btn {
     background-color: #14B1E2;
     border: none;
-    padding: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
     cursor: pointer;
     color: white;
 }
-#reset-btn{
+
+#reset-btn {
     background-color: #14B1E2;
     border: none;
-    padding: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
     cursor: pointer;
     color: white;
 }
