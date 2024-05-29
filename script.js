@@ -1,12 +1,17 @@
 
+const secText = document.getElementById('sec-txt');
+const txt1 = 'Dear Customer, Mandatory login and profile password change introduced for added security.';
+const txt2 = 'To clear cache, please refresh this page by pressing Ctrl + F5';
+
+
+
 const captchaDiv = document.getElementById('captcha-div');
-// captchaDiv.style.visibility = 'hidden';
 console.log(captchaDiv);
 
 function generateCaptcha() {
     let uniqueCaptcha = '';
     const captchaChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    for (let i = 1; i < 6; i++) {
+    for (let i = 1; i <= 5; i++) {
         uniqueCaptcha += captchaChar.charAt(
             Math.random() * captchaChar.length)
     }
@@ -17,7 +22,11 @@ refreshImg.addEventListener('click', generateCaptcha);
 
 
 const userName = window.document.getElementById('username-field');
+const password = window.document.getElementById('password-field');
+const captchaField = window.document.getElementById('captcha-field');
 userName.addEventListener('paste', e => alert('Paste is not allwoed'));
+password.addEventListener('paste', e => alert('Paste is not allwoed'));
+captchaField.addEventListener('paste', e => alert('Paste is not allwoed'));
 
 
 const imageRadio = document.getElementById('image-radio');
@@ -40,11 +49,6 @@ function showHide() {
         // captchaAudio.style.visibility = 'hidden'
         captchaDiv.style.visibility = 'visible'
     }
-
-    if (imageRadio.checked) {
-        console.log('ffff');
-      
-    } 
 }
 
 

@@ -15,21 +15,28 @@ ul {
     vertical-align: middle;
 }
 
-header ul {
-    float: right;
+header {
+    display: flex;
 }
-
 
 header ul li img {}
 
+header ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
 header ul li {
-    display: inline-block;
+    list-style-type: none;
 }
 
 header ul li a {
     text-decoration: none;
-    list-style-type: none;
+    color: gray;
+
 }
+
 
 a:hover {
     text-decoration: underline;
@@ -51,13 +58,39 @@ nav ul li a {
     text-decoration: none;
     padding: 10px;
     color: white;
-
+    font-size: 14px;
 }
 
 nav ul li a:hover {
     text-decoration: none;
     background-color: aqua;
 }
+
+.user-message {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E8F3F9;
+}
+
+.user-message span {
+    font-size: 11px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.first-txt,
+.third-txt {
+    color: #165E96;
+}
+
+#sec-txt {
+    color: tomato;
+}
+
+
 
 .main-div {
     margin: auto;

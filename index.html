@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>State Bank of India</title>
-    <link rel="icons" href="icons/SBI-logo.svg.png">
+    <link rel="icon" type="" href="icons/sbi-blue-logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,6 +40,13 @@
         </ul>
     </nav>
 
+    <div class="user-message">
+        <span class="first-txt">Login to OnlineSBI </span>
+        <span class="" id="sec-txt">Dear Customer, Mandatory login and profile password change
+            introduced for added security. </span>
+        <span class="third-txt">Welcome to Personal Internet Banking </span>
+    </div>
+
 
     <div class="main-div">
         <div class="form-div">
@@ -49,9 +56,10 @@
                 <label for="">Username*</label> <br>
                 <input type="text" id="username-field" onpaste="return false"> <br>
                 <label for="">Password*</label> <br>
-                <input type="password" id="password-field"> <br>
-                <label for="">Enter the text as shown in the image *</label> <br>
-                <input type="text" id="captcha-field"> <br>
+                <input type="password" id="password-field" onpaste="return false"> <br>
+                <label for="">Enter the text as shown in the image <span style="color: orangered;"> *</span></label>
+                <br>
+                <input type="text" id="captcha-field" onpaste="return false"> <br>
                 <label for="">Select one of the Captcha options *</label>
                 <div class="radio-captcha-div">
                     <input type="radio" id="image-radio" name="captcha" checked>
@@ -59,7 +67,7 @@
                     <input type="radio" name="captcha" id="audio-radio">
                     <label for="audio-radio" class="captcha-label">Audio Captcha</label>
                 </div>
-                <div hidden id="captcha-div"> </div>  
+                <div hidden id="captcha-div"> </div>
                 <audio src="" controls id="captcha-audio" hidden>Sa</audio>
                 <img src="icons/refresh.svg" alt="" id="refresh-img"> <br>
                 <button id="login-btn">Login</button>
